@@ -16,6 +16,11 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias -- -="cd -"                  # Go to previous dir with -
 
+# grep
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
 # Miscellaneous
 alias week="date +%V"
 alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
