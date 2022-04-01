@@ -1,0 +1,29 @@
+[user]
+	name = Peter Labus
+	email = Peter.Labus@quoniam.com
+[core]
+	editor = nvim
+[help]
+	autocorrect = 1
+[diff]
+    tool = nvimdiff
+[difftool]
+    prompt = true
+[merge]
+    tool = nvimdiff
+[difftool "nvimdiff"]
+    cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+[alias]
+	br = branch -vv
+	cm = commit -m
+	co = checkout
+	dt = difftool -t nvimdiff -y
+	gl = config --global -l
+	gr = grep -n --ignore-case
+	last = !(git log -1 HEAD --stat & git diff HEAD~1)
+	ls = log --oneline
+	ll = log --pretty=format:'%C(Yellow)%h  %C(blue)%ad (%C(Green)%cr%C(reset))%x09 %C(Cyan)%an: %C(reset)%s' --date=short
+
+	rv = remote -v
+	search = !git rev-list --all --abbrev-commit | xargs git grep -F
+	st = status -sb
