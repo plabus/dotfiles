@@ -1,3 +1,5 @@
+[init]
+	defaultBranch = master
 [user]
 	name = Peter Labus
 	email = plabus@nvidia.com
